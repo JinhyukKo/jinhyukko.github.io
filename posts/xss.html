@@ -1,0 +1,15 @@
+<h1>Why &lt;script&gt; doesn’t execute but onerror does</h1>
+<p class="meta">XSS · 2026-01-15</p>
+
+<p>
+Modern browsers treat inline script tags differently from
+event handler attributes.
+</p>
+
+<pre><code>
+&lt;img src=x onerror=alert(1)&gt;
+</code></pre>
+
+<p>
+This is because…
+</p>
