@@ -1,0 +1,121 @@
+:root {
+  --bg: #0e0e11;
+  --fg: #e6e6eb;
+  --sub: #9da0a6;
+  --card: #16161c;
+  --accent: #7c7cff;
+}
+
+.light {
+  --bg: #ffffff;
+  --fg: #111;
+  --sub: #555;
+  --card: #f4f4f4;
+  --accent: #5b5bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+nav a {
+  margin-right: 1.2rem;
+  color: var(--sub);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--fg);
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  color: var(--fg);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: var(--sub);
+}
+
+.posts {
+  margin-top: 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.post {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-4px);
+}
+
+.tag {
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+.post h2 {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+}
+
+.post p {
+  color: var(--sub);
+  font-size: 0.9rem;
+}
+
+.post time {
+  font-size: 0.75rem;
+  color: var(--sub);
+}
+
+.about {
+  margin-top: 5rem;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--sub);
+}
