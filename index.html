@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jinhyuk | Security Engineering Notes</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Security, Pentest, Cloud, Network engineering notes." />
+  <meta name="author" content="Jinhyuk" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">JH</div>
+    <nav>
+      <a href="#posts">Posts</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/" target="_blank">GitHub</a>
+    </nav>
+    <button id="themeToggle">◐</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Security Engineering Notes</h1>
+      <p>XSS · Pentest · AWS · Network · System</p>
+    </section>
+
+    <section id="posts" class="posts">
+      <article class="post">
+        <span class="tag">XSS</span>
+        <h2>Why &lt;script&gt; doesn’t execute but onerror does</h2>
+        <p>Modern browsers sanitize script tags differently from event handlers...</p>
+        <time>2026-01-15</time>
+      </article>
+
+      <article class="post">
+        <span class="tag">AWS</span>
+        <h2>ALB vs API Gateway from a security perspective</h2>
+        <p>Understanding attack surface differences in managed AWS services...</p>
+        <time>2026-01-10</time>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        Security engineer focused on web vulnerabilities, cloud architecture,
+        and defensive system design.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Jinhyuk</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
