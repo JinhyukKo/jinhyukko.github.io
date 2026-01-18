@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Post | Jinhyuk</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <a href="index.html">← Back</a>
+</header>
+
+<main>
+  <article id="content">
+    Loading...
+  </article>
+</main>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const file = params.get("file");
+
+  if (!file) {
+    document.getElementById("content").innerText = "Post not found.";
+  } else {
+    fetch("posts/" + file)
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("content").innerHTML = html;
+      })
+      .catch(() => {
+        document.getElementById("content").innerText = "Failed to load post.";
+      });
+  }
+</script>
+
+</body>
+</html>
