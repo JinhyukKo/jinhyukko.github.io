@@ -1,78 +1,46 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jinhyuk | Security Engineering Notes</title>
+<main>
 
-  <!-- SEO -->
-  <meta name="description" content="Security, Pentest, Cloud, Network engineering notes." />
-  <meta name="author" content="Jinhyuk" />
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Security Engineering Notes</h1>
+    <p>XSS · Cloud · Network · System</p>
+  </section>
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <h2>Categories</h2>
+    <ul>
+      <li><a href="posts/xss/page/1.html">XSS</a></li>
+      <li><a href="posts/aws/page/1.html">AWS</a></li>
+      <li><a href="posts/network/page/1.html">Network</a></li>
+    </ul>
+  </section>
 
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">JH</div>
-    <nav>
-      <a href="#posts">Posts</a>
-      <a href="#about">About</a>
-      <a href="https://github.com/" target="_blank">GitHub</a>
-    </nav>
-    <button id="themeToggle">◐</button>
-  </header>
+  <!-- LATEST POSTS -->
+  <section class="posts">
+    <h2>Latest</h2>
 
-  <main>
-    <section class="hero">
-      <h1>Security Engineering Notes</h1>
-      <p>XSS · Pentest · AWS · Network · System</p>
-    </section>
+    <article class="post">
+      <span class="tag">XSS</span>
+      <h3>
+        <a href="post.html?file=xss/xss-script.html">
+          Why &lt;script&gt; doesn’t execute
+        </a>
+      </h3>
+      <time>2026-01-15</time>
+    </article>
 
-<section id="posts" class="posts">
+    <article class="post">
+      <span class="tag">AWS</span>
+      <h3>
+        <a href="post.html?file=aws/alb-vs-apigw.html">
+          ALB vs API Gateway: attack surface
+        </a>
+      </h3>
+      <time>2026-01-10</time>
+    </article>
 
-  <article class="post">
-    <span class="tag">XSS</span>
-    <h2>
-      <a href="post.html?file=xss.html">
-        Why &lt;script&gt; doesn’t execute but onerror does
-      </a>
-    </h2>
-    <p>Browser parsing & filtering behavior explained.</p>
-    <time>2026-01-15</time>
-  </article>
+    <a class="more" href="category.html">View all →</a>
+  </section>
 
-  <article class="post">
-    <span class="tag">AWS</span>
-    <h2>
-      <a href="post.html?file=alb-vs-apigw.html">
-        ALB vs API Gateway from a security perspective
-      </a>
-    </h2>
-    <p>Attack surface & trust boundary comparison.</p>
-    <time>2026-01-10</time>
-  </article>
-
-</section>
-
-
-    <section id="about" class="about">
-      <h2>About</h2>
-      <p>
-        Security engineer focused on web vulnerabilities, cloud architecture,
-        and defensive system design.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <span>© 2026 Jinhyuk</span>
-  </footer>
-
-  <script src="main.js"></script>
-</body>
-</html>
+</main>
